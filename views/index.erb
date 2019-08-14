@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>天気の子メーカー</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/5ac9533b42.js"></script>
+</head>
+<body>
+<h1>天気の子メーカー</h1>
+<p>白い背景で撮影した写真をアップロードしよう！</p>
+
+<div>
+  <form action="/new" method="post" enctype="multipart/form-data">
+    <input type="text" name="text">
+    <input type="file" name="file">
+    <button type="submit"><i class="far fa-paper-plane"></i></button>
+  </form>
+</div>
+
+  <img src="<%= session[:url] %>">
+</body>
+
+
+</html>
