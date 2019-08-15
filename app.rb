@@ -54,11 +54,7 @@ post '/new' do
 
   upload = Cloudinary::Uploader.upload(path + ".png")
   img_url = upload['url']
-  open(img_url) { |image|
-  File.open("#{text}の子.jpg","wb") do |file|
-    file.puts image.read
-  end
-  }
+  session[:url] = img_url
 
   redirect '/'
 end

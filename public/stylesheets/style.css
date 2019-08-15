@@ -1,0 +1,55 @@
+@font-face{
+  font-family: 'a1';
+  src: url(../fonts/A-OTF-A1.otf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  color: #363636;
+}
+
+body{
+  background: #fafafa;
+}
+
+.row{
+  width: 100vw;
+}
+
+button{
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  display: block;
+  margin: 0 auto
+}
+
+input[type="file"], .title{
+  display: block;
+  margin: 0 auto;
+}
+
+h1{
+  font-family: 'a1'
+}
+
+@media screen and (min-width:960px){
+  h1{
+    font-size: 4rem;
+  }
+  img{
+    width: 70vw;
+    margin: 5vh auto;
+  }
+}
+@media screen and (max-width:960px){
+  p{
+    font-size: 0.8rem;
+  }
+
+  img{
+    width: 90vw;
+    margin: 2vh auto;
+  }
+}
