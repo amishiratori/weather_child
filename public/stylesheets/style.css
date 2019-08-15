@@ -14,7 +14,8 @@ body{
 }
 
 .row{
-  width: 100vw;
+  width: 80vw;
+  margin: 0 auto;
 }
 
 button{
@@ -41,6 +42,7 @@ h1{
   img{
     width: 70vw;
     margin: 5vh auto;
+    height: auto;
   }
 }
 @media screen and (max-width:960px){
@@ -50,6 +52,8 @@ h1{
 
   img{
     width: 90vw;
-    margin: 2vh auto;
+    margin: 5vh auto;
+    height: auto;
   }
+
 }
